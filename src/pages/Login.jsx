@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate, Link } from "react-router-dom";
-import styles from "./Login.module.css"; // Import CSS Module
+import styles from "./Login.module.css";
 
 const LOGIN_MUTATION = gql`
   mutation Login($email: String!, $password: String!) {
@@ -45,7 +45,7 @@ export default function Login() {
 
         {error && <p className={styles.error}>Invalid email or password</p>}
         <button type="submit" className={styles.button} disabled={loading}>
-          {loading ? "Logging in..." : "Login"}
+          {loading ? "Logging in" : "Login"}
         </button>
       </form>
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMutation, gql } from "@apollo/client";
 import { useNavigate, Link } from "react-router-dom";
-import styles from "./Login.module.css"; // Import CSS Module
+import styles from "./Login.module.css";
 
 const REGISTER_MUTATION = gql`
   mutation Register($name: String!, $email: String!, $password: String!) {

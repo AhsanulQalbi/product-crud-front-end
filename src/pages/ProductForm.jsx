@@ -116,7 +116,7 @@ export default function ProductForm() {
       <div className={styles.productList}>
         {data?.products?.map((product) => (
           <div key={product.product_id} className={styles.productItem}>
-            <p><strong>{product.name}</strong> - ${product.price} (Stock: {product.stock})</p>
+            <p><strong>{product.name}</strong> - Rp {product.price} (Stock: {product.stock})</p>
             <button onClick={() => handleEdit(product)} className={styles.editButton}>Edit</button>
             <button onClick={() => handleDelete(product.product_id)} className={styles.deleteButton}>Delete</button>
           </div>
